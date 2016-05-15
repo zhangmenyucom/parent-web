@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -26,8 +25,9 @@
 
 		<version-servlet>3.1.0</version-servlet>
 		<version-json-lib>2.4</version-json-lib>
-
+		
 		<version-spymemcached>2.11.5</version-spymemcached>
+		<version-jedis>2.8.1</version-jedis>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -121,6 +121,12 @@
 				<groupId>net.spy</groupId>
 				<artifactId>spymemcached</artifactId>
 				<version>${version-spymemcached}</version>
+			</dependency>
+			<!-- http://mvnrepository.com/artifact/redis.clients/jedis -->
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${version-jedis}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
